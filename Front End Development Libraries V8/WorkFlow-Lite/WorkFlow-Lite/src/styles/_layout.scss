@@ -1,0 +1,15 @@
+@use 'variables' as vars;
+
+.app-shell {
+  display: flex;
+  min-height: 100vh;
+}
+
+.app-main {
+  flex: 1;
+  padding: vars.$spacer-md;
+
+  @media (min-width: 768px) {
+    padding: vars.$spacer-lg;
+  }
+}
