@@ -1,0 +1,18 @@
+@use 'variables' as vars;
+@use 'mixins' as mix;
+
+.task-card {
+  @include mix.card-elevated;
+  padding: vars.$spacer-md;
+  background: #fff;
+}
+
+.task-card__title {
+  @include mix.truncate-lines(2);
+}
+
+.priority-badge {
+  font-size: 0.75rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+}
